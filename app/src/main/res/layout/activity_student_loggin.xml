@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:background="#5890"
+android:layout_height="match_parent"
+tools:context="com.mlab.kabelo.studentreport.StudentLoggin">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/user_profile" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        app:srcCompat="@drawable/padlock" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_width="350dp"
+        android:layout_marginLeft="16dp"
+        android:background="#fff"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password" />
+
+
+    <EditText
+        android:id="@+id/editPassword1"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:background="#fff"
+        android:layout_width="350dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loginBtn1"
+        android:layout_width="300dp"
+        android:layout_marginTop="40dp"
+        android:onClick="onButtonClick"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:background="@drawable/repo"
+        android:text="login" />
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:textColor="#000"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an Account?" />
+
+    <Button
+        android:id="@+id/signupBtn1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/repo"
+        android:onClick="onButtonClick"
+        android:text="Sign Up" />
+
+</LinearLayout>
+
+
+
+
+</ScrollView>

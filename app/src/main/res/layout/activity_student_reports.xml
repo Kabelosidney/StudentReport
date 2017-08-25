@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground"
+    tools:context="com.mlab.kabelo.studentreport.StudentReports">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/btn_viewData"
+            android:layout_width="250dp"
+            android:onClick="ViewData"
+            android:background="@drawable/not_pressed"
+            android:layout_height="70dp"
+            android:text="View report"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="109dp" />
+
+        <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="60dp"
+        android:layout_gravity="center"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/result"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="46dp"
+        app:srcCompat="@drawable/boy_graduate2"
+        android:layout_below="@+id/textView14"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:background="#65254235"
+        android:text="Progress Report"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4" />
+</RelativeLayout>
